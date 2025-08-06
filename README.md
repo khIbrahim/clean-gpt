@@ -16,3 +16,5 @@ Elle améliore l’expérience de lecture sur ChatGPT en **évitant l'accumulati
 - Optimiser encore les performances sur très longues conversations
 
 ---
+
+*credit l chatgpt pour le design ux ui, c son thème hahaha*
