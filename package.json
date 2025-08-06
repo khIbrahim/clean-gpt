@@ -1,0 +1,17 @@
+{
+  "name": "clean-gpt",
+  "version": "1.0.0",
+  "main": "content.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chrome": "^0.1.0",
+    "tailwindcss": "^4.1.11"
+  },
+  "description": ""
+}

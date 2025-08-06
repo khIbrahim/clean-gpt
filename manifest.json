@@ -1,0 +1,63 @@
+{
+  "manifest_version": 3,
+  "name": "CleanGPT",
+  "version": "1.0.0",
+  "description": "Paginate and search long ChatGPT conversations (clean scroll, no lag)",
+  "icons": {
+    "48": "images/cleangpt-icon-48.png",
+    "128": "images/cleangpt-icon-128.png"
+  },
+  "homepage_url": "https://github.com/khIbrahim/cleangpt",
+  "host_permissions": [
+    "https://chat.openai.com/*",
+    "https://chatgpt.com/*"
+  ],
+  "incognito": "spanning",
+
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://chatgpt.com/*"
+      ],
+      "js": [
+        "lib/mark.min.js",
+        "content/highlightMatches.js",
+        "modules/ui/injectSearchBox.js",
+        "modules/ui/createLoadButton.js",
+        "content/searchMode.js",
+        "content/initMessages.js",
+        "content/handleSearch.js",
+        "content.js"
+      ],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "action": {
+    "default_icon": {
+      "48": "images/cleangpt-icon-48.png",
+      "128": "images/cleangpt-icon-128.png"
+    }
+  },
+
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+
+  "commands": {
+    "open-cleangpt-search": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F"
+      },
+      "description": "Open CleanGPT Search Tab"
+    }
+  }
+}
