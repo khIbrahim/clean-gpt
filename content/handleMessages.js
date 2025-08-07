@@ -19,11 +19,6 @@ function updateVisibleMessages() {
             const hasMark = messageEl.querySelectorAll("mark").length > 0
             messageEl.style.display = hasMark ? '' : 'none'
         } else {
-            if(index >= allMessages.length - currentVisibleCount){
-                console.log(`je laisse ${index}`)
-            } else {
-                console.log(`je hide ${index}`)
-            }
             messageEl.style.display = index >= allMessages.length - currentVisibleCount ? '' : 'none'
         }
     })
