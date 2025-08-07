@@ -56,12 +56,12 @@ function handleScroll() {
     })
 }
 
-function initMessages(messages){
+function handleMessages(messages){
     allMessages = messages
 
     const container = getScrollContainer()
     if(! container){
-        return requestAnimationFrame(() => initMessages(messages))
+        return requestAnimationFrame(() => handleMessages(messages))
     }
 
     if(! document.getElementById('clean-gpt-load-btn')){
@@ -69,4 +69,29 @@ function initMessages(messages){
     }
 
     handleScroll()
+}
+
+function handleNewMessage(node) {
+    allMessages.push(node)
+    currentVisibleCount -= 1
+    updateVisibleMessages()
+}
+
+function observeNewMessages(){
+    const observer = new MutationObserver((mutations) => {
+        for (const mutation of mutations) {
+            for (const node of mutation.addedNodes) {
+                if(node instanceof HTMLElement){
+                    if(node.tagName === 'ARTICLE'){
+                        handleNewMessage(node)
+                    }
+                }
+            }
+        }
+    })
+
+    observer.observe(document.querySelector('main .flex.h-full.flex-col.overflow-y-auto'), {
+        childList: true,
+        subtree: true
+    })
 }

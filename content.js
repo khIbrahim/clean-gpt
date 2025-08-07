@@ -20,5 +20,8 @@ const waitForMessages = (callback) => {
     }
 };
 
-waitForMessages(initMessages);
+waitForMessages((messages) => {
+    handleMessages(messages)
+    observeNewMessages()
+});
 handleSearch();

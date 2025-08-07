@@ -31,7 +31,7 @@
         "modules/ui/injectSearchBox.js",
         "modules/ui/createLoadButton.js",
         "content/searchMode.js",
-        "content/initMessages.js",
+        "content/handleMessages.js",
         "content/handleSearch.js",
         "content.js"
       ],

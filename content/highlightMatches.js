@@ -1,6 +1,6 @@
 function getInstance() {
-    const messages = document.querySelectorAll('article[data-testid^="conversation-turn"]');
-    return new Mark(messages);
+    const messages = document.querySelectorAll('article[data-testid^="conversation-turn"]')
+    return new Mark(messages)
 }
 
 const HIGHLIGHT_TAG = 'current'
@@ -36,7 +36,7 @@ function scrollToElement(el){
             block: 'center',
             inline: 'nearest'
         })
-    }, 50);
+    }, 50)
 }
 
 function updateResults() {
@@ -48,7 +48,7 @@ function updateResults() {
     }
 
     if (window.updateVisibleMessages) {
-        window.updateVisibleMessages();
+        window.updateVisibleMessages()
     }
 }
 
