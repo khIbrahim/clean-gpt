@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a9f8c113-5157-4276-b2be-b63d9d63b38d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/highlightMatches.js" beforeDir="false" afterPath="$PROJECT_DIR$/content/highlightMatches.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/initMessages.js" beforeDir="false" afterPath="$PROJECT_DIR$/content/handleMessages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,11 +75,22 @@
       <workItem from="1754082159419" duration="50000" />
       <workItem from="1754083143822" duration="329000" />
       <workItem from="1754428976970" duration="12611000" />
-      <workItem from="1754554492769" duration="2174000" />
+      <workItem from="1754554492769" duration="2633000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
